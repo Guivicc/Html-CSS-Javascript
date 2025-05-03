@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Data e Hora</h1>
+    </header>
+        
+        <main>
+            <div>
+                <img id="imagen" src="" alt="">
+                <p id="txt"></p>
+            </div>
+        </main>
+        
+    <footer>
+        <p>feito por <a target="_blank" href="https://github.com/Guivicc">Guivicc</a></p>
+    </footer>
+    
+    <script>
+        var agora = new Date()
+        var hr = agora.getHours()
+        var img = document.querySelector("#imagen")
+        var msg = document.querySelector("#txt")
+
+
+        if(hr >= 6 && hr <= 11){
+            img.src = "img/manha.jpg"
+            img.alt = "imagem da manha"
+            msg.textContent = "Bom Dia"
+
+        }
+        else if(hr >= 12 && hr <= 18){
+            img.src = "img/dia.jpg"
+            img.alt = "imagem de dia"
+            msg.textContent = "Boa Tarde"
+
+        }
+        else if(hr > 18 && hr <= 23){
+            img.src = "img/noite.webp"
+            img.alt = "imagem da noite"
+            msg.textContent = "Boa Noite"
+            
+
+        }
+        else if(hr >= 0 && hr < 6){
+            img.src = "img/madrugada.jpg"
+            img.alt = "imagem da madrugada"
+            msg.textContent = "Boa madrugada"
+
+        }
+    </script>
+</body>
+</html>

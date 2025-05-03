@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/pc-tv-style.css" media="screen and (min-width: 921px)">
+    <link rel="stylesheet" href="css/note-tablet-style.css" media="screen and (min-width: 500px) and (max-width: 920px)">
+    <link rel="stylesheet" href="css/mobible-style.css" media="screen and (max-width: 499px)">
+</head>
+<body>
+    <main>
+        <img id="tela" src="imagens/background.jpg" alt="prédio">
+        <div>
+            <h1>Login</h1>
+
+            <p>Seja bem-vindo novamente. faça login para acessar sua conta e poder fazer as configuraçoes do seu ambiente</p>
+            <form action="login.php" method="post" autocomplete="on">
+                <p>
+                    <label for="ilogin"><i class="material-icons">login</i></label>
+                    <input type="text" name="nlogin" id="ilogin" required required minlength="4" autocomplete="nickname" placeholder="Login">
+                </p>
+
+                <p>
+                    <label for="isenha"><i class="material-icons">lock</i></label>
+                    <input type="password" name="nsenha" id="isenha" required autocomplete="current-password" required minlength="4" placeholder="Senha">
+                </p>
+
+                <p>
+                    <input type="submit" value="login">
+                </p>
+
+                <p>
+                    <input type="submit" value="redefinir senha">
+                </p>
+            </form>
+            
+            
+        </div>
+    </main>
+    
+</body>
+</html>

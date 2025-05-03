@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*pc e tv*/
+
+*{background-color: aqua;}
+
+main img{
+    
+    margin: -6px;
+    border-radius: 15px 15px 0px 0px;
+    width: 261px;
+}

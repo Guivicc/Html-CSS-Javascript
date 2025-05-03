@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posso votar?</title>
+</head>
+<body>
+    <label for="idade">Digite Sua idade</label>
+    <input type="number" id="idade" class="idade">
+    <input type="button" value="Enviar" onclick="validar()" >
+
+    <div id="resp">
+        
+    </div>
+
+    <script>
+        function validar(){
+        var varidade = window.document.getElementById('idade')
+        var res = window.document.getElementById('resp')
+
+        
+            if(varidade.value < 16){
+                resp.innerHTML = '<p>você <strong>não</strong> pode votar</p>'
+            }
+            else if(varidade.value >= 16 && varidade.value < 18){
+                resp.innerHTML = '<p>você <strong>pode</strong> mas não é obrigatorio</p>'
+            }
+            else if(varidade.value >= 18 && varidade.value <= 60){
+                resp.innerHTML = '<p>Você é <strong>obrigado</strong> a votar</p>'
+            }
+            else{
+                resp.innerHTML = '<p>Você <strong>pode</strong> votar mas não é obrigatorio</p>'
+            }
+        }
+        
+    </script> 
+    
+</body>
+</html>

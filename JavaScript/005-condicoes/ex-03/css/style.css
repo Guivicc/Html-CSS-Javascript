@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+
+}
+
+header{
+    background-color: bisque;
+    text-align: center;
+    width: 100vw;
+    padding: 20px 0px;
+    font-size: 2em;
+
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    overflow: auto;
+    text-align: center;
+    font-size: 2em;
+    
+    
+
+}
+
+main > div > img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+}
+
+footer{
+    padding: 5px;
+    background-color: blueviolet;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    color: bisque;
+    text-decoration: none;
+    
+    
+
+}
+
+footer a{
+    color: bisque;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
+}

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+
+body, html{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+ 
+}
+
+body{
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+div#iphone{
+    
+    background-image: url(imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 625px;
+    width: 310px;
+}
+
+div#tela{
+    /*
+    background-image: url(imagens/tela-home.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;*/
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49.9%, -48.9%);
+    height: 476px;
+    width: 278px;
+        iframe#telas{
+            height: 476px;
+            width: 278px;
+        }
+}
+
+
+div#menu{
+    margin-top: 20vh;
+    margin-right: 2vw;
+    position: absolute;
+    right: 1px;
+    width: 50px;
+
+}
+    
+div#menu img{
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+    box-sizing: border-box;
+}
+
+div#menu img:hover{
+    border: 2px solid rgba(117, 117, 117, 0.589);
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    transition: transform .4s, border 1s, box-shadow .4s;
+}
+
+
+
+

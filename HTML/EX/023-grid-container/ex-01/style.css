@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+div.conter{
+    border: 2px dashed green;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+
+}
+
+div.i{
+    border: 2px dashed tan;
+    padding: 20px;
+
+}

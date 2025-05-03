@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*Tv*/
+
+body{
+    background-image: url(../imagens/background-tv.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        
+    }
+
+    img#cels{
+        display: none;
+    }
+
+    img#tabs{
+        display: none;
+    }
+
+    img#notes{
+        display: none;
+    }
+
+    img#pcs{
+        display: none;
+    }
+
+    img#tvs{
+        
+        width: 70px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>teste de dom</strong></h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse doloremque aliquid temporibus optio nulla quasi repellat atque dicta, vel deserunt ipsa itaque obcaecati nesciunt cum explicabo ipsam repudiandae aliquam placeat.</p>
+
+    <div id="area">
+        
+    </div>
+    
+
+
+    <script> /*manipulando com marca ou TagName*/
+    
+    var textmarc = window.document.getElementsByTagName('h1')[0] /*getelementsby / id seleciona por id / class seleciona por classe*/
+    document.write(textmarc.innerText + ' texto com tagname e inner text <br> <br>') /* text não mantem a formatação*/
+    document.write(textmarc.innerHTML + ' texto com tagname e inner html <br> <br>') /*html mantem a formatação*/
+
+    /* function  */
+    
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+    function entrar() {
+        a.innerText = 'Entrou!!'
+        a.style.background = 'red'
+    }
+
+    function sair () {
+        a.innerText = 'Saiu!'
+        a.style.background = 'aqua'
+    }
+
+    function clicar () {
+        a.innerText = 'clickou'
+        a.style.background = 'green'
+    }
+    </script>
+
+    
+</body>
+</html>

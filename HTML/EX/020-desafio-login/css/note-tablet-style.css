@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*tablet*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    
+    background-image: linear-gradient(to right, rgb(208, 225, 228), rgb(15, 156, 175));
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+main{
+    position: absolute;
+    background-color: white;
+    width: 80vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+main img{
+    
+    margin: -6px;
+    border-radius: 15px 15px 0px 0px;
+    width: 82vw;
+    height: 22vh;
+}
+
+div{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+   
+    h1{
+        color: white;
+        text-align: center;
+    }
+
+    p{
+        padding-top: 15px;
+        line-height: 1.5em;
+    }
+}
+
+input#isenha{
+    height: 20px;
+    
+}
+
+input#ilogin{
+    height: 20px;
+}
+

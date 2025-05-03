@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+body, html{
+
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(157, 92, 218);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header > h1{
+    border:  1px solid black;
+    flex: 0 0 200px;
+}
+ 
+header > menu{
+    border: solid 1px black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-self: end;
+    
+    
+    
+}
+
+header > menu > a {
+    border: 2px solid black;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    font-size: 1.2em;
+    
+}
+
+header > menu > a:hover{
+    color: blueviolet;
+    background-color: black;
+    transition: background-color .3s;
+    transition: color .2s;
+
+}
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    
+}
+
+section{
+    background-color: white;
+    width: 660px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    line-height: 1.5em;
+    h1{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+
+    body, html
+
+    
+        header{
+            
+            background-color: rgb(157, 92, 218);
+            
+            display: flex;
+            flex-flow: column wrap;
+       
+        }
+    
+        header > h1{
+            border:  1px solid black;
+            flex: 0 0 200px;
+        }
+     
+        header > menu{
+            border: solid 1px black;
+            display: flex;
+            flex-flow: column nowrap;
+            
+            align-self: center;
+        
+        }
+    
+        header > menu > a {
+            border: 2px solid black;
+            background-color: blueviolet;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            width: 80vw;
+            font-size: 1.2em;
+            text-align: center;
+            
+        
+        
+        }
+    
+        header > menu > a:hover{
+            color: blueviolet;
+            background-color: black;
+            transition: background-color .3s;
+            transition: color .2s;
+    
+        }
+    
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: blanchedalmond;
+            
+        }
+        
+        section{
+            background-color: white;
+            width: 660px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 0px 0px 15px 15px;
+            line-height: 1.5em;
+            h1{
+                text-align: center;
+            }
+        
+        }
+
+ 
+
+}

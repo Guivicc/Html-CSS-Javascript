@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Tablet*/
+
+body{
+    background-image: url(../imagens/background-tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    img#cels{
+        display: none;
+    }
+
+    img#tabs{
+        width: 50px;
+        height: 50px;
+    }
+
+    img#notes{
+        display: none;
+    }
+
+    img#pcs{
+        display: none;
+    }
+
+    img#tvs{
+        display: none;
+    }
+}

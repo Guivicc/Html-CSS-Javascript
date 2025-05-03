@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        /* converter numeros*/
+        var n1 = parseFloat(window.prompt('digite um numero'))
+        var n2 = parseFloat(window.prompt('digite outro numero'))
+        var r = n1 + n2
+        window.alert(`A soma de ${n1} e ${n2} é igual a ${r}`)
+        
+        /*alterar a localidade*/
+        n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+        n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+
+        n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+    </script>
+</body>
+</html>

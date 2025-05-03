@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*  <link rel="stylesheet" href="css/pc-tv-style.css" media="screen and (min-width: 921px)">
+    <link rel="stylesheet" href="css/note-tablet-style.css" media="screen and (min-width: 500px) and (max-width: 920px)">
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    
+    background-image: linear-gradient(to right, purple, rgb(15, 156, 175));
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+main{
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+main img{
+    
+    margin: -6px;
+    border-radius: 15px 15px 0px 0px;
+    width: 261px;
+}
+
+div{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+   
+    h1{
+        text-align: center;
+    }
+
+    p{
+        padding-top: 15px;
+        line-height: 1.5em;
+    }
+}
+
+input#isenha{
+    height: 20px;
+    
+}
+
+input#ilogin{
+    height: 20px;
+}
+

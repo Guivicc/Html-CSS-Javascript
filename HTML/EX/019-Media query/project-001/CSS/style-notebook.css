@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*notebook*/
+
+body{
+    background-image: url(../imagens/backgrond-notebook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right bottom;
+
+    img#cels{
+        display: none;
+    }
+
+    img#tabs{
+        display: none;
+    }
+
+    img#notes{
+        width: 100px;
+        height: 50px;
+    }
+
+    img#pcs{
+        display: none;
+    }
+
+    img#tvs{
+        display: none;
+    }
+    
+}

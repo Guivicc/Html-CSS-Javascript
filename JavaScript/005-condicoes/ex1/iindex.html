@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>preencha o formulario</h1>
+
+        Digite o pais onde você vive: <input type="text" name="pais" id="pais"> <input type="button" value="verificar" onclick="calcular()">
+       
+   
+    
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function calcular(){
+            var p = window.document.getElementById('pais') //salva a resposta
+            var res = window.document.querySelector('div#res') 
+            var pstring = p.value.trim().toLowerCase() //converte todas as letras para minusca e tira os espaços e tem q criar outra variavel para receber o valor alterado
+
+
+            if (pstring == 'brasil'|| pstring == 'brazil'){
+                res.innerHTML = '<p>você é Brasileiro</p>'
+            }
+            else{
+                res.innerHTML = '<p>você é estrangeiro </p>'
+            }
+           
+        }
+       
+    </script>
+</body>
+</html>
