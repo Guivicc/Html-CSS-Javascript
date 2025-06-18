@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: antiquewhite;
+    
+    height: 100vh;
+}
+
+main{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex: auto;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+form{
+    background-color: blue;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+}
+
+div{
+    background-color: brown;
+
+}
+
+img{
+
+}

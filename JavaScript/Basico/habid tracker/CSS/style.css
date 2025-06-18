@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header{
+    margin: 20px;
+}
+
+div.menu{
+    margin: 15px;
+    
+}
+
+table{
+    border: 1px solid black;
+    
+}
+
+thead{
+    
+}
+
+th{
+    padding: 5px 10px;
+}
+
+tbody{
+
+}
+
+td{
+    
+}
+
+button{
+    margin: 1px 3px;
+    padding: 1px 3px;
+}
+
+.invi{
+    font-size: 15px;
+      background: #1af0ff00;
+      color: rgb(253, 253, 253);
+      border: none;
+      padding: 0px;
+      cursor: pointer;
+}
+
+input{
+    padding: 3px 5px;
+}
+
+.destaque{
+    background-color: blueviolet;
+}
+
+.destaqueFix{
+    background-color: blueviolet;
+}
+
+.material-symbols-outlined {
+    
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* sidebar */
+
+.sidebar {
+      height: 100dvh;
+      width: 20dvw;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      left: -2250px;
+      top: 0;
+      transition: left 0.7s ease;
+    }
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.sidebar li{
+    font-size: 1em;
+}
+
+.sidebar h2{
+    text-align: center;
+    margin: 20px;
+}
+
+
+ /* Botão */
+    .toggle-btn {
+      font-size: 15px;
+      background: #33333300;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+
+/*modo dark*/
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark main {
+  background-color: #312f2f;
+}
+
+body.dark table,
+body.dark th,
+body.dark td {
+  border-color: #000000;
+  color: #ddd;
+}
+
+body.dark .destaque,
+body.dark .destaqueFix {
+  background-color: darkmagenta;
+}
+
+body.dark .sidebar {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .toggle-btn {
+  color: white;
+}
+
+
+
+.barProgresJavascript {
+  width: 100%;
+  max-width: 300px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  
+}
+
+.barProgresJavascript .preenchimento {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(11, 239, 247);
+  transition: width 0.5s ease-in-out;
+}
+
+.ocult{
+    display: none;
+}
+

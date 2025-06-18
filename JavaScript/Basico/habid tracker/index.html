@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>habid tracker</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+</head>
+<body onload="mostrar_habitos()">
+    <main>
+        <header>
+            <h1>Habid Tracker</h1>
+            
+            <div class="barProgressHTML" id="barProgressHTML"><progress id="barhtml" value="" max=""></progress></div>
+            <div class="barProgresJavascript" id="barJavascript">
+                <div class="preenchimento">
+
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <label for="adicionar_habito">digite oque deseja adicionar a lista</label>
+            <input type="text" id="adicionar_habito" placeholder="estudar programação">
+            <input type="button" id="btn_adicionar" onclick="criar()" value="Criar">
+            <input type="button" id="btn_remover_all" onclick="remover_all()" value="Remover Tudo">
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <h2>sidebar</h2>
+
+            <ul>
+                <li><button class="invi" onclick="toggleTheme()">dark mode / light mode</button></li>
+                <li><button class="invi" onclick="ocultBarProgressHTML()">barra de progresso html</button></li>
+                <li><button class="invi" onclick="ocultBarProgressJavascript()">barra de progresso javascript</button></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <p id="erro"></p>
+        </div>
+        <table>
+            
+           <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            
+
+            <thead>
+                <tr>
+                    <th>Hábito</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                    <th>ações</th>
+                </tr>
+            </thead>
+            
+            <tbody id="tabela_habitos">
+
+            </tbody>
+        </table>
+    </main>
+    
+    <script src="Javascript/script.js">
+
+    </script>
+</body>
+</html>
