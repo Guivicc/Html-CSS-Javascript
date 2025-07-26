@@ -231,5 +231,6 @@ function ocultBarProgressJavascript(){
 document.body.addEventListener('change', function(e) {
   if (e.target.type === 'checkbox') {
     mostrar_habitos();
+    
   }
 });

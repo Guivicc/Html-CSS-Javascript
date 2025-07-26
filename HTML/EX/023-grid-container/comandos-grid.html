@@ -23,6 +23,50 @@
 
     <p>justify-content // start == stretch / center / end / space-between / space-evenly / space-around /</p>
 
+    <p>grid-auto-row: 100px // caso uma nova linha implícita seja adicionada ela recebe esse tamanho</p>
+
+    <p>grid-auto-column: 100px // caso uma nova coluna implícita seja adicionada ela recebe esse tamanho</p>
+
+    grid-auto-flow: row //  define a direção do fluxo da grid, pode ser row ou column
+
+    <h1>simplificação</h1>
+
+    <p>justify-items e aling-intems == place-itens = 1 aling 2 justify //</p>
+
+    <p>justify-content e aling-content == place-content = 1 aling 2 justify</p>
+
+    <p>grid-template-columns e grid-template-rows == grid-template = rows / columns</p>
+
+    <h1>reapeat</h1>
+
+    reapeat (vezes, tamanho) // repete o tamanho definido o numero de vezes definido
+    
+    simplificação
+
+    grid-template: repeat(3, 100px) / repeat(2, 100px); // 3 linhas de 100px e 2 colunas de 100px
+
+    <h1>fraçoes e span</h1>
+
+    frações são usadas para ter maior controle sobre o tamanho dos itens na grid
+
+    span é usado para definar quaantos linhas ou colulas o item de ESPANDIR apartir do seu ponto de inicio
+
+    <h1>comandos de itens</h1>
+
+    grid-row-start: 1; // define a linha de inicio do item na grid
+    grid-row-end: 3; // define a linha de fim do item na grid
+
+    grid-column-start: 1; // define a coluna de inicio do item na grid
+    grid-column-end: 3; // define a coluna de fim do item na grid
+
+    simplificação
+
+    grid-row: 1 / 3; // define a linha de inicio e fim do item na grid
+    grid-column: 1 / 3; // define a coluna de inicio e fim do item na grid
+
+    grid-area: 1 / 1 / 3 / 3; // define a área do item na grid (linha de inicio, coluna de inicio, linha de fim, coluna de fim)
+
+
 
 
 </body>
