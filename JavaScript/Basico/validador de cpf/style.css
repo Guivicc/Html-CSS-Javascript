@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 350px;
+    height: 200px;
+    background-color: bisque;
+    padding: 10px;
+}
+
+input{
+    margin: 7px;
+}
+
+button{
+    padding: 2px;
+}
